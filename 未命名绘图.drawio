@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-08T15:15:45.639Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63" etag="ftBtIfaugQ0WY-ghHf69" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-08T15:33:12.513Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63" etag="Ejoq1kSl9gQRhbS3mu6A" version="20.2.8" type="github">
   <diagram id="UlHVcAD68Zj0mifvGkCI" name="第 1 页">
-    <mxGraphModel dx="1038" dy="1748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="818" dy="1669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -105,6 +105,9 @@
         <mxCell id="tXmrCc0qoYKCxtDVC8vD-36" value="&lt;div class=&quot;lake-content&quot;&gt;&lt;span class=&quot;ne-text&quot;&gt;postProcessAfterInitialization&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="750" y="330" width="120" height="45" as="geometry" />
         </mxCell>
+        <mxCell id="RdK4mdnQ-tFFZLlzZody-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tXmrCc0qoYKCxtDVC8vD-41" target="RdK4mdnQ-tFFZLlzZody-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="tXmrCc0qoYKCxtDVC8vD-41" value="BeanPostProcessor&lt;br&gt;后置增强器，在bean的初始化过程可以进行AOP的代理等操作，对bean进行扩展" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1110" y="175" width="230" height="105" as="geometry" />
         </mxCell>
@@ -143,6 +146,24 @@
             <mxPoint x="810" y="515" as="sourcePoint" />
             <mxPoint x="810" y="620" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="RdK4mdnQ-tFFZLlzZody-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RdK4mdnQ-tFFZLlzZody-8" target="RdK4mdnQ-tFFZLlzZody-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RdK4mdnQ-tFFZLlzZody-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="RdK4mdnQ-tFFZLlzZody-8" target="RdK4mdnQ-tFFZLlzZody-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RdK4mdnQ-tFFZLlzZody-8" value="AOP增强 动态代理" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1165" y="322.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RdK4mdnQ-tFFZLlzZody-10" value="JDK" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RdK4mdnQ-tFFZLlzZody-12" value="Cglib" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RdK4mdnQ-tFFZLlzZody-14" value="如果一个对象需要创建代理对象，那么是否会通过反射创建对应的普通对象，也就是bean的初始化操作，属性填充操作会不会做？&lt;br&gt;一定会去创建一个普通的实例化对象&lt;br&gt;所以叫扩展" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="490" width="300" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
